@@ -98,7 +98,7 @@ var createHtml = function () {
 
       var submit = document.createElement('input');
       submit.classList.add('btn');
-      submit.setAttribute('type', 'button');
+      submit.setAttribute('type', 'submit');
       submit.setAttribute('value', 'Проверить мои результаты');
 
       var parent = document.querySelector('form');
