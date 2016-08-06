@@ -104,7 +104,7 @@ var createHtml = function () {
       var parent = document.querySelector('form');
       parent.appendChild(submit);
 
-    }(),
+    }()
 
   };
 
