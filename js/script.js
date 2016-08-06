@@ -23,11 +23,22 @@ var createHtml = function () {
 
     }(),
 
+    getForm: function () {
+
+      var form = document.createElement('form');
+      form.setAttribute('action', '/echo');
+      form.setAttribute('method', 'post');
+
+      var parent = document.querySelector('.container');
+      parent.appendChild(form);
+
+    }(),
+
     getLists: function () {
 
       var lists = document.createElement('ol');
 
-      var parent = document.querySelector('.container');
+      var parent = document.querySelector('form');
       parent.appendChild(lists);
 
     }(),
@@ -90,7 +101,7 @@ var createHtml = function () {
       submit.setAttribute('type', 'button');
       submit.setAttribute('value', 'Проверить мои результаты');
 
-      var parent = document.querySelector('ol');
+      var parent = document.querySelector('form');
       parent.appendChild(submit);
 
     }(),
